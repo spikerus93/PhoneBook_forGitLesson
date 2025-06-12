@@ -1,0 +1,204 @@
+PS C:\Users\User\IdeaProjects\Git_HomeWork2\PhoneBook_forGitLesson> 
+ *  Журнал восстановлен 
+
+Cloning into 'PhoneBook_forGitLesson'...
+remote: Enumerating objects: 30, done.
+remote: Counting objects: 100% (30/30), done.
+remote: Compressing objects: 100% (17/17), done.
+Receiving objects: 100% (30/30), 5.00 KiB | 732.00 KiB/s, done.
+Resolving deltas: 100% (6/6), done.
+PS C:\Users\User\IdeaProjects\Git_HomeWork2> cd .\PhoneBook_forGitLesson\
+PS C:\Users\User\IdeaProjects\Git_HomeWork2\PhoneBook_forGitLesson> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\User\IdeaProjects\Git_HomeWork2\PhoneBook_forGitLesson> git log
+commit fddb9ce81e0ce1db67230c39b8e690fb5bbedbbb (HEAD -> main, origin/main, origin/HEAD)
+Merge: 3d84776 dded449
+Author: master <spikerus93@rambler.ru>
+Date:   Sat Nov 16 18:27:33 2024 +0300
+
+    Merge branch 'main' of https://github.com/spikerus93/PhoneBook_forGitLesson
+
+commit 3d8477606a5028c11891376e39532f4f78e3e70c
+Author: master <spikerus93@rambler.ru>
+Date:   Sat Nov 16 17:51:50 2024 +0300
+
+    git push HomeWork1
+
+commit dded4490d9634ed6fa46c7fcdb8f9cae4a8f2d8b
+Author: Kirill Golubev <135273609+spikerus93@users.noreply.github.com>
+Date:   Sat Nov 16 17:44:44 2024 +0300
+
+    Initial commit
+
+commit 6835c4b3ef76542312acc6b4e5183305c300a0ab
+Author: master <spikerus93@rambler.ru>
+Date:   Sun Nov 19 12:56:13 2023 +0300
+
+    Добавление файла readme - описание работы Телефонной книги на Java
+
+commit f186da4bbc9f574f84c1f550177a2408b33bc6c0
+Author: master <spikerus93@rambler.ru>
+    git push HomeWork1
+
+commit dded4490d9634ed6fa46c7fcdb8f9cae4a8f2d8b
+Author: Kirill Golubev <135273609+spikerus93@users.noreply.github.com>
+Date:   Sat Nov 16 17:44:44 2024 +0300
+
+    Initial commit
+
+commit 6835c4b3ef76542312acc6b4e5183305c300a0ab
+Author: master <spikerus93@rambler.ru>
+Date:   Sun Nov 19 12:56:13 2023 +0300
+
+    Добавление файла readme - описание работы Телефонной книги на Java
+
+commit f186da4bbc9f574f84c1f550177a2408b33bc6c0
+Author: master <spikerus93@rambler.ru>
+Author: master <spikerus93@rambler.ru>
+
+    Добавление файла readme - описание работы Телефонной книги на Java
+
+commit f186da4bbc9f574f84c1f550177a2408b33bc6c0
+Date:   Sun Nov 19 12:45:19 2023 +0300
+
+PS C:\Users\User\IdeaProjects\Git_HomeWork2\PhoneBook_forGitLesson> git revert f186da4bbc9f574f84c1f550177a2408b33bc6c0
+ 1 file changed, 6 deletions(-)
+ delete mode 100644 .idea/vcs.xml
+PS C:\Users\User\IdeaProjects\Git_HomeWork2\PhoneBook_forGitLesson> git revert dded4490d9634ed6fa46c7fcdb8f9cae4a8f2d8b
+[main 1158d54] Revert 2 "Initial commit"
+ 1 file changed, 2 deletions(-)
+ delete mode 100644 README.md
+PS C:\Users\User\IdeaProjects\Git_HomeWork2\PhoneBook_forGitLesson> git revert 6835c4b3ef76542312acc6b4e5183305c300a0ab
+CONFLICT (modify/delete): src/myPhoneBook/readme.md deleted in parent of 6835c4b (Добавление файла readme - описание работы Телефонной книги на Java) and modified in HEAD.  Version HEAD of src/myPhoneBook/readme.md left in tree.
+иги на Java
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".
+hint: To abort and get back to the state before "git revert",
+hint: run "git revert --abort".
+hint: Disable this message with "git config advice.mergeConflict false"
+PS C:\Users\User\IdeaProjects\Git_HomeWork2\PhoneBook_forGitLesson> git revert --abort    
+PS C:\Users\User\IdeaProjects\Git_HomeWork2\PhoneBook_forGitLesson> git revert 3d8477606a5028c11891376e39532f4f78e3e70c
+[main 9fc9f7f] Revert 3 "git push HomeWork1"
+ 1 file changed, 2 deletions(-)
+PS C:\Users\User\IdeaProjects\Git_HomeWork2\PhoneBook_forGitLesson> git log
+commit 9fc9f7f220110e35fbdf0ed6f6483cd0dd1519a3 (HEAD -> main)
+Author: master <spikerus93@rambler.ru>
+Date:   Thu Jun 12 14:45:35 2025 +0300
+
+    Revert 3 "git push HomeWork1"
+
+    This reverts commit 3d8477606a5028c11891376e39532f4f78e3e70c.
+
+commit 1158d54b59515e4fbd81e8f1715fb777daba9cec
+Author: master <spikerus93@rambler.ru>
+Date:   Thu Jun 12 14:42:14 2025 +0300
+
+commit 9fc9f7f220110e35fbdf0ed6f6483cd0dd1519a3 (HEAD -> main)
+Author: master <spikerus93@rambler.ru>
+Date:   Thu Jun 12 14:45:35 2025 +0300
+
+    Revert 3 "git push HomeWork1"
+
+    This reverts commit 3d8477606a5028c11891376e39532f4f78e3e70c.
+
+commit 1158d54b59515e4fbd81e8f1715fb777daba9cec
+Author: master <spikerus93@rambler.ru>
+Date:   Thu Jun 12 14:42:14 2025 +0300
+
+    Revert 2 "Initial commit"
+
+    This reverts commit dded4490d9634ed6fa46c7fcdb8f9cae4a8f2d8b.
+
+
+Author: master <spikerus93@rambler.ru>
+
+    Revert 1 "Реализация Телефонной книги на Java"
+    This reverts commit f186da4bbc9f574f84c1f550177a2408b33bc6c0.
+
+PS C:\Users\User\IdeaProjects\Git_HomeWork2\PhoneBook_forGitLesson> git reset --soft 9fc9f7f220110e35fbdf0ed6f6483cd0dd1519a3
+PS C:\Users\User\IdeaProjects\Git_HomeWork2\PhoneBook_forGitLesson> git reset --mixed 1158d54b59515e4fbd81e8f1715fb777daba9cec
+Unstaged changes after reset:
+M       src/myPhoneBook/readme.md
+PS C:\Users\User\IdeaProjects\Git_HomeWork2\PhoneBook_forGitLesson> git log
+commit 1158d54b59515e4fbd81e8f1715fb777daba9cec (HEAD -> main)
+Author: master <spikerus93@rambler.ru>
+Date:   Thu Jun 12 14:42:14 2025 +0300
+
+    Revert 2 "Initial commit"
+
+
+
+commit 9ee60b8cec18761ee51abf0c9f9971ef04500fe3
+Author: master <spikerus93@rambler.ru>
+Date:   Thu Jun 12 14:39:36 2025 +0300
+
+    Revert 1 "Реализация Телефонной книги на Java"
+
+PS C:\Users\User\IdeaProjects\Git_HomeWork2\PhoneBook_forGitLesson> get reset --hard 9ee60b8cec18761ee51abf0c9f9971ef04500fe3
+get : Имя "get" не распознано как имя командлета, функции, файла сценария или выполняемой
+после чего повторите попытку.
++ get reset --hard 9ee60b8cec18761ee51abf0c9f9971ef04500fe3
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (get:String) [], CommandNotFoundException   
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\User\IdeaProjects\Git_HomeWork2\PhoneBook_forGitLesson> git reset --hard 9ee60b8cec18761ee51abf0c9f9971ef04500fe3
+HEAD is now at 9ee60b8 Revert 1 "Реализация Телефонной книги на Java"
+PS C:\Users\User\IdeaProjects\Git_HomeWork2\PhoneBook_forGitLesson> git log
+commit 9ee60b8cec18761ee51abf0c9f9971ef04500fe3 (HEAD -> main)
+Author: master <spikerus93@rambler.ru>
+Date:   Thu Jun 12 14:39:36 2025 +0300
+
+    Revert 1 "Реализация Телефонной книги на Java"
+
+    This reverts commit f186da4bbc9f574f84c1f550177a2408b33bc6c0.
+
+commit fddb9ce81e0ce1db67230c39b8e690fb5bbedbbb (origin/main, origin/HEAD)
+Merge: 3d84776 dded449
+Author: master <spikerus93@rambler.ru>
+Date:   Sat Nov 16 18:27:33 2024 +0300
+
+    Merge branch 'main' of https://github.com/spikerus93/PhoneBook_forGitLesson
+
+commit 3d8477606a5028c11891376e39532f4f78e3e70c
+Author: master <spikerus93@rambler.ru>
+Date:   Sat Nov 16 17:51:50 2024 +0300
+
+    git push HomeWork1
+
+commit dded4490d9634ed6fa46c7fcdb8f9cae4a8f2d8b
+Author: Kirill Golubev <135273609+spikerus93@users.noreply.github.com>
+Date:   Sat Nov 16 17:44:44 2024 +0300
+
+    Initial commit
+
+commit 6835c4b3ef76542312acc6b4e5183305c300a0ab
+Author: master <spikerus93@rambler.ru>
+Date:   Sun Nov 19 12:56:13 2023 +0300
+
+    Добавление файла readme - описание работы Телефонной книги на Java
+
+commit f186da4bbc9f574f84c1f550177a2408b33bc6c0
+Author: master <spikerus93@rambler.ru>
+Date:   Thu Jun 12 14:39:36 2025 +0300
+
+    Revert 1 "Реализация Телефонной книги на Java"
+
+    This reverts commit f186da4bbc9f574f84c1f550177a2408b33bc6c0.
+
+commit fddb9ce81e0ce1db67230c39b8e690fb5bbedbbb (origin/main, origin/HEAD)
+PS C:\Users\User\IdeaProjects\Git_HomeWork2\PhoneBook_forGitLesson> git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 387 bytes | 387.00 KiB/s, done.
+Total 3 (delta 2), reused 1 (delta 1), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/spikerus93/PhoneBook_forGitLesson.git
+   fddb9ce..9ee60b8  main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\User\IdeaProjects\Git_HomeWork2\PhoneBook_forGitLesson>
